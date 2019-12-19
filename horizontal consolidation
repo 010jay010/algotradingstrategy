@@ -1,0 +1,27 @@
+///  
+///
+/// integer count = 0
+/// bool price_is_below = ( value < resistance_line )
+/// bool touches_resistance_line = ( value - 20 < resistance_line && resistance_line < value + 20  ) 
+/// if ( price_is_below && 
+/// 	 touches_resistance_line && 
+/// 	 ticks > 10
+/// 	) 
+/// {
+///   count++
+/// }
+/// if( 
+///   count == 2 && 
+///   close >= resistance_line + 0.0001 
+/// ) 
+/// {
+///   time_to_buy
+/// }
+/// close at same price twice
+/// close above resistance line by 0.0001
+/// 
+/// /// how do I find the resistance line ?
+/// resistance line figured out by 4 variables a, b, c, d /// https://www.javatpoint.com/hill-climbing-algorithm-in-ai
+/// set a, set b ... does not work out . then b becomes a and a becomes nothing.
+/// 
+/// define the sideways pattern.
